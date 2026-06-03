@@ -34,6 +34,14 @@ import pegawaiweb2 from "../img/pegawaiweb2.png";
 import pegawaiweb3 from "../img/pegawaiweb3.png";
 import pegawaiweb4 from "../img/pegawaiweb4.png";
 
+import nusantaramart1 from "../img/nusantaramart1.png";
+import nusantaramart2 from "../img/nusantaramart2.png";
+import nusantaramart3 from "../img/nusantaramart3.png";
+import nusantaramart4 from "../img/nusantaramart4.png";
+
+import roomify1 from "../img/roomify1.png";
+import roomify2 from "../img/roomify2.png";
+
 export const animasizahrinImg = animasizahrin;
 export const zahrinpinkImg = zahrinpink;
 
@@ -73,7 +81,15 @@ export const projectsData = [
     title: "Fleur Skin Care Management System",
     desc: "A web-based skin care management system built with PHP, Tailwind CSS, and MySQL. The application allows users to schedule daily, weekly, or monthly skincare routines such as salon visits, masking sessions, and treatments. It also includes a product library to manage skincare products and a beauty notes feature to record personal skincare experiences. The system implements CRUD functionality for schedules, products, and notes with dynamic database integration.",
     img: [fleurskin1],
-    images: [fleurskin1, fleurskin3, fleurskin4, fleurskin5, fleurskin6, fleurskin7, fleurskin8],
+    images: [
+      fleurskin1,
+      fleurskin3,
+      fleurskin4,
+      fleurskin5,
+      fleurskin6,
+      fleurskin7,
+      fleurskin8,
+    ],
     tech: ["PHP", "Tailwind CSS", "MySQL", "Javascript"],
   },
   {
@@ -82,6 +98,20 @@ export const projectsData = [
     img: [pegawaiweb1],
     images: [pegawaiweb1, pegawaiweb2, pegawaiweb3, pegawaiweb4],
     tech: ["Laravel", "Tailwind CSS", "MySQL", "Javascript"],
+  },
+  {
+    title: "Nusantara Mart E-Commerce Platform",
+    desc: "Developed the frontend interface for a local Indonesian marketplace using React and JavaScript. Focused on building a responsive UI, dynamic product catalog, and seamless interactive features like the shopping cart and authentication views.",
+    img: [nusantaramart1],
+    images: [nusantaramart1, nusantaramart2, nusantaramart3, nusantaramart4],
+    tech: ["React", "Javascript", "REST API Integration", "Tailwind CSS"],
+  },
+  {
+    title: "Roomify: Campus Room Reservation System",
+    desc: "Developed a full-stack campus room booking platform featuring a secure multi-role architecture for users and administrators. Engineered a robust backend using ASP.NET with JWT authentication, seamlessly integrated with a dynamic, responsive frontend built in React and TypeScript to manage room availability and reservation workflows.",
+    img: [roomify1],
+    images: [roomify1, roomify2],
+    tech: ["React", "Tailwind CSS", "TypeScript", "ASP.NET", "JWT Auth"],
   },
 ];
 

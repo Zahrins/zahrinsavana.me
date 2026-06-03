@@ -4,13 +4,21 @@ import { skillsData } from "../data/constants";
 export default function Skills() {
   return (
     <section id="skill" className="pt-20 mx-10 lg:mx-20 mb-20">
-      <h5 className="text-2xl text-slate-700 mb-5 dark:text-slate-200">
-        ------- Skills
-      </h5>
+      <div className="mb-20 flex flex-col items-start">
+        <span className="bg-[#EBE8E3] text-[#3B3735] px-4 py-1.5 rounded-full text-sm font-bold mb-4 shadow-sm">
+          Skills
+        </span>
+
+        <h2 className="text-4xl md:text-5xl font-bold text-[ #3B3735] dark:text-white tracking-tight">
+          What I can do
+        </h2>
+
+        <div className="w-3/4 h-1.5 bg-[#F3D7CA] rounded-full mt-4"></div>
+      </div>
       <div className="flex flex-col gap-5">
         {/* Card Frontend */}
-        <div className="border border-slate-300 dark:border-white/10 bg-white dark:bg-[#2A2A2A] rounded-2xl p-6 shadow-sm">
-          <h3 className="text-lg font-bold text-slate-700 dark:text-slate-200 mb-4">
+        <div className="border border-slate-300 dark:border-[#D1CCC5]/30 bg-white dark:bg-[#3B3735] rounded-2xl p-6 shadow-sm">
+          <h3 className="text-lg font-bold text-slate-700 dark:text-[#EBE8E3] mb-4">
             Frontend
           </h3>
           <div className="flex flex-wrap gap-3">
@@ -21,7 +29,7 @@ export default function Skills() {
               CSS
             </span>
             <span className="px-4 py-1.5 rounded-full text-sm font-semibold bg-amber-100 text-amber-700 dark:bg-amber-500/20 dark:text-amber-300">
-              JS
+              JavaScript
             </span>
             <span className="px-4 py-1.5 rounded-full text-sm font-semibold bg-blue-100 text-blue-700 dark:bg-blue-500/20 dark:text-blue-300">
               TypeScript
@@ -36,8 +44,8 @@ export default function Skills() {
         </div>
 
         {/* Card Design */}
-        <div className="border border-slate-300 dark:border-white/10 bg-white dark:bg-[#2A2A2A] rounded-2xl p-6 shadow-sm">
-          <h3 className="text-lg font-bold text-slate-700 dark:text-slate-200 mb-4">
+        <div className="border border-slate-300 dark:border-[#D1CCC5]/30 bg-white dark:bg-[#3B3735] rounded-2xl p-6 shadow-sm">
+          <h3 className="text-lg font-bold text-slate-700 dark:text-[#EBE8E3] mb-4">
             Design
           </h3>
           <div className="flex flex-wrap gap-3">
@@ -53,28 +61,36 @@ export default function Skills() {
           </div>
         </div>
 
-        {/* Card Pengalaman Belajar */}
-        <div className="border border-slate-300 dark:border-white/10 bg-white dark:bg-[#2A2A2A] rounded-2xl p-6 shadow-sm">
-          <h3 className="text-lg font-bold text-slate-700 dark:text-slate-200 mb-4">
-            Pengalaman belajar
+        <div className="border border-slate-300 dark:border-[#D1CCC5]/30 bg-white dark:bg-[#3B3735] rounded-2xl p-6 shadow-sm">
+          <h3 className="text-lg font-bold text-slate-700 dark:text-[#EBE8E3] mb-4">
+            Backend & Database
           </h3>
-          <div className="flex items-center gap-4 mb-2">
-            {/* Progress Bar Track */}
-            <div className="w-full bg-slate-200 dark:bg-[#1A1A1A] h-2.5 rounded-full overflow-hidden">
-              {/* Progress Bar Fill */}
-              <div
-                className="bg-[#D45D3C] h-full rounded-full transition-all duration-1000 ease-out"
-                style={{ width: "85%" }}
-              ></div>
-            </div>
-            {/* Percentage Text */}
-            <span className="text-slate-700 dark:text-slate-200 font-bold text-sm">
-              85%
+          <div className="flex flex-wrap gap-3">
+            <span className="px-4 py-1.5 rounded-full text-sm font-semibold bg-red-100 text-red-600 dark:text-red-600 dark:bg-pink-500/20">
+              Laravel
+            </span>
+            <span className="px-4 py-1.5 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 dark:text-blue-600 dark:bg-fuchsia-500/20">
+              MySQL
+            </span>
+            <span className="px-4 py-1.5 rounded-full text-sm font-semibold bg-teal-100 text-teal-600 dark:text-teal-600 dark:bg-rose-500/20">
+              PHP
+            </span>
+            <span>
+              <span className="px-4 py-1.5 rounded-full text-sm font-semibold bg-green-100 text-green-600 dark:text-green-600 dark:bg-green-500/20">
+                ASP.NET
+              </span>
+            </span>
+            <span>
+              <span className="px-4 py-1.5 rounded-full text-sm font-semibold bg-purple-100 text-purple-600 dark:text-purple-600 dark:bg-purple-500/20">
+                JWT Auth
+              </span>
+            </span>
+            <span>
+              <span className="px-4 py-1.5 rounded-full text-sm font-semibold bg-cyan-100 text-cyan-600 dark:text-cyan-400 dark:bg-cyan-500/20">
+                REST API
+              </span>
             </span>
           </div>
-          <p className="text-sm text-slate-500 dark:text-slate-400 font-medium mt-2">
-            HTML / CSS proficiency
-          </p>
         </div>
       </div>
     </section>

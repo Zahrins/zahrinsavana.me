@@ -5,6 +5,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import VerticalScroll from "./components/VerticalScroll";
 import "./App.css";
 
 function App() {
@@ -46,9 +47,15 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-gradient-to-b from-[#F9F8F6] via-white to-[#F9F8F6] relative dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 scroll-smooth">
-      <Navbar scrolled={scrolled} darkMode={darkMode} setDarkMode={setDarkMode} activeSection={activeSection} />
+    <div className="bg-gradient-to-b from-[#F9F8F6] via-white to-[#F9F8F6] relative dark:from-[#201f1f] dark:via-[#353433] dark:to-[#3B3735] scroll-smooth">
+      <Navbar
+        scrolled={scrolled}
+        darkMode={darkMode}
+        setDarkMode={setDarkMode}
+        activeSection={activeSection}
+      />
 
+      <VerticalScroll />
       <main>
         <Hero />
         <About />
@@ -58,13 +65,17 @@ function App() {
       </main>
 
       {/* Footer */}
-      <div className="mt-7 bg-white py-1 flex justify-center items-center dark:bg-slate-700">
-        <div className="text-center text-gray-700 dark:text-gray-200">&copy; 2026 Zahrin Savana. All Rights Reserved.</div>
+      <div className="mt-7 bg-white py-1 flex justify-center items-center dark:bg-[#7A7571]">
+        <div className="text-center text-gray-700 dark:text-[#EBE8E3]">
+          &copy; 2026 Zahrin Savana. All Rights Reserved.
+        </div>
       </div>
 
       {/* Scroll to top */}
       <div className="scroll-smooth w-10 h-10 bg-[#F3D7CA] rounded-full flex fixed bottom-5 right-5 -translate-x-1/2 cursor-pointer">
-        <a href="#home" className="text-xl m-auto">↑</a>
+        <a href="#home" className="text-xl m-auto">
+          ↑
+        </a>
       </div>
     </div>
   );

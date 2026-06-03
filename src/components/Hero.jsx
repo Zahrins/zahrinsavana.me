@@ -9,14 +9,14 @@ export default function Hero() {
           <div className="lg:w-1/2">
             <h1 className="text-base font-semibold text-[#7A7571] md:text-xl lg:text-2xl dark:text-[#7A7571]">
               Helloooo, I'm
-              <span className="block mt-4 font-bold text-[#3B3735] text-3xl lg:text-5xl dark:text-slate-200">
+              <span className="block mt-4 font-bold text-[#3B3735] text-3xl lg:text-5xl dark:text-[#EBE8E3]">
                 Zahrin Savana
               </span>
             </h1>
             <h2 className="font-medium text-[#56504d] lg:text-xl text-lg mb-5">
               frontend developer
             </h2>
-            <p className="leading-relaxed dark:text-slate-300">
+            <p className="leading-relaxed dark:text-[#EBE8E3]">
               Welcome to my personal corner of the web – where creativity meets
               passion. Take a look around and enjoy the journey!!
             </p>
@@ -28,9 +28,12 @@ export default function Hero() {
                 UI/UX
               </div>
             </div>
-            <div className="bg-[#F3D7CA] border border-neutral-400 hover:bg-[#f1cbb9] transform transition-colors cursor-pointer px-6 py-2 rounded-3xl w-max mt-5 text-sm">
+            <a
+              href="#project"
+              className="bg-[#F3D7CA] border border-neutral-400 hover:bg-[#f1cbb9] transform transition-colors cursor-pointer px-6 py-2 rounded-3xl w-max mt-5 text-sm inline-block"
+            >
               View My Work
-            </div>
+            </a>
           </div>
           <div className="relative mt-10 lg:m-5 lg:bottom-0 lg:left-10 lg:w-2/5">
             <img
