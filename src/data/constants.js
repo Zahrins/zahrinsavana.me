@@ -62,6 +62,7 @@ export const projectsData = [
     img: [walkingTracker1],
     images: [walkingTracker1, walkingTracker2, walkingTracker3],
     tech: ["HTML", "CSS", "Chart.js", "Javascript"],
+    repo: "https://github.com/Zahrins/walking_tracker",
   },
   {
     title: "Tap Battle Counter (React Mini Game)",
@@ -69,6 +70,7 @@ export const projectsData = [
     img: [counter3],
     images: [counter3],
     tech: ["React", "Javascript", "CSS"],
+    repo: "https://github.com/Zahrins/simple-counter",
   },
   {
     title: "Library Management System (Team Project)",
@@ -98,6 +100,7 @@ export const projectsData = [
     img: [pegawaiweb1],
     images: [pegawaiweb1, pegawaiweb2, pegawaiweb3, pegawaiweb4],
     tech: ["Laravel", "Tailwind CSS", "MySQL", "Javascript"],
+    repo: "https://github.com/Zahrins/app-pegawai",
   },
   {
     title: "Nusantara Mart E-Commerce Platform",
@@ -105,6 +108,7 @@ export const projectsData = [
     img: [nusantaramart1],
     images: [nusantaramart1, nusantaramart2, nusantaramart3, nusantaramart4],
     tech: ["React", "Javascript", "REST API Integration", "Tailwind CSS"],
+    repo: "https://github.com/Zahrins/Nusantara-Mart",
   },
   {
     title: "Roomify: Campus Room Reservation System",
@@ -112,6 +116,7 @@ export const projectsData = [
     img: [roomify1],
     images: [roomify1, roomify2],
     tech: ["React", "Tailwind CSS", "TypeScript", "ASP.NET", "JWT Auth"],
+    repo: "https://github.com/Zahrins/2026-Roomify-frontend",
   },
 ];
 

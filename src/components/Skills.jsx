@@ -9,11 +9,11 @@ export default function Skills() {
           Skills
         </span>
 
-        <h2 className="text-4xl md:text-5xl font-bold text-[ #3B3735] dark:text-white tracking-tight">
+        <h2 className="text-4xl md:text-5xl font-bold text-[#3B3735] dark:text-[#EBE8E3] tracking-tight">
           What I can do
         </h2>
 
-        <div className="w-3/4 h-1.5 bg-[#F3D7CA] rounded-full mt-4"></div>
+        <div className="w-3/4 h-1.5 bg-[#F3D7CA] rounded-full mt-4 dark:bg-[#D1CCC5]/30"></div>
       </div>
       <div className="flex flex-col gap-5">
         {/* Card Frontend */}

@@ -63,13 +63,13 @@ export default function Navbar({ scrolled, darkMode, setDarkMode, activeSection 
         scrolled ? "bg-slate-100 shadow-md dark:bg-slate-900" : "bg-transparent"
       }`}
     >
-      <nav className="fixed top-0 left-0 w-full bg-[#EBE8E3] bg-transparent backdrop-blur-md dark:bg-[#7A7571] dark:bg-transparent shadow-md z-50">
+      <nav className="fixed top-0 left-0 w-full bg-[#EBE8E3] bg-transparent dark:bg-transparent backdrop-blur-md dark:bg-[#3B3735] dark:border-b dark:border-[#D1CCC5]/20 shadow-md z-50">
         <div className="max-w-6xl mx-auto flex items-center justify-between lg:px-6 px-2 gap-2 py-4">
           <div className="flex items-center gap-3">
-            <a className="hidden lg:block text-slate-700 text-xl font-medium hover:text-slate-800 dark:text-[#EBE8E3] capitalize cursor-pointer">
+            <a className="hidden lg:block text-[#3B3735] text-xl font-medium hover:text-slate-700 dark:text-[#EBE8E3] dark:hover:text-white capitalize cursor-pointer transition-colors">
               Zahrin
             </a>
-            <div className="relative group flex-shrink-0" ref={mascotRef}>
+            <div className="hidden lg:block relative group flex-shrink-0" ref={mascotRef}>
               <div
                 className="relative rounded-full w-12 h-12 bg-[#7A7571] dark:bg-[#3B3735] border-2 border-[#D1CCC5] dark:border-[#D1CCC5] shadow-sm cursor-pointer hover:scale-105 transition-transform"
                 onClick={handleMascotClick}
@@ -118,10 +118,10 @@ export default function Navbar({ scrolled, darkMode, setDarkMode, activeSection 
               <li key={item}>
                 <a
                   href={`#${item}`}
-                  className={`transform transition-all hover:border-b-2 hover:border-b-slate-600 dark:text-[#EBE8E3] capitalize ${
+                  className={`transform transition-all hover:border-b-2 dark:hover:border-b-[#EBE8E3] capitalize font-medium ${
                     activeSection === item
-                      ? "text-[#3B3735] border-b-2 border-[#7A7571] dark:text-[#EBE8E3]"
-                      : "text-[#3B3735] hover:text-slate-900"
+                      ? "text-[#3B3735] border-b-2 border-[#7A7571] dark:text-[#EBE8E3] dark:border-b-[#EBE8E3]"
+                      : "text-[#3B3735] hover:text-slate-900 dark:text-[#D1CCC5] dark:hover:text-[#EBE8E3] hover:border-b-[#7A7571] dark:hover:border-b-[#D1CCC5]"
                   }`}
                 >
                   {item}
@@ -131,10 +131,9 @@ export default function Navbar({ scrolled, darkMode, setDarkMode, activeSection 
           </ul>
 
           <div className="flex items-center gap-3">
-            {/* Label Terang - Berubah warna menjadi gelap jika sedang aktif */}
             <span
               className={`hidden lg:block text-sm font-medium transition-colors duration-300 ${
-                !darkMode ? "text-[#3B3735]" : "text-[#7A7571]"
+                !darkMode ? "text-[#3B3735] dark:text-[#D1CCC5]" : "text-[#7A7571] dark:text-[#D1CCC5]"
               }`}
             >
               Light
@@ -148,25 +147,22 @@ export default function Navbar({ scrolled, darkMode, setDarkMode, activeSection 
                 onChange={() => setDarkMode(!darkMode)}
               />
 
-              {/* Track / Latar Belakang Toggle */}
               <div
                 className={`w-14 h-8 rounded-full border-2 transition-all duration-300 ease-in-out shadow-inner ${
                   darkMode
-                    ? "bg-[#3B3735] border-[#3B3735]" // Mode Gelap: Background penuh gelap
-                    : "bg-[#EBE8E3] border-[#D1CCC5]" // Mode Terang: Background surface dengan border medium
+                    ? "bg-[#3B3735] border-[#3B3735]" 
+                    : "bg-[#EBE8E3] border-[#D1CCC5]" 
                 }`}
               ></div>
 
-              {/* Knob / Bulatan Geser dengan Ikon di dalamnya */}
               <div
                 className={`absolute left-1 top-1 w-6 h-6 rounded-full flex items-center justify-center transition-transform duration-300 ease-in-out shadow-sm ${
                   darkMode
-                    ? "translate-x-6 bg-[#EBE8E3]" // Posisi Kanan (Gelap), Knob warna surface terang
-                    : "translate-x-0 bg-[#3B3735]" // Posisi Kiri (Terang), Knob warna teks utama gelap
+                    ? "translate-x-6 bg-[#EBE8E3]" 
+                    : "translate-x-0 bg-[#3B3735]" 
                 }`}
               >
                 {darkMode ? (
-                  // Ikon Bulan (Muncul saat Dark Mode)
                   <svg
                     className="w-3.5 h-3.5 text-[#3B3735]"
                     fill="currentColor"
@@ -175,7 +171,7 @@ export default function Navbar({ scrolled, darkMode, setDarkMode, activeSection 
                     <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                   </svg>
                 ) : (
-                  // Ikon Matahari (Muncul saat Light Mode)
+          
                   <svg
                     className="w-4 h-4 text-[#EBE8E3]"
                     fill="currentColor"
@@ -191,10 +187,9 @@ export default function Navbar({ scrolled, darkMode, setDarkMode, activeSection 
               </div>
             </label>
 
-            {/* Label Gelap - Berubah warna menjadi gelap jika sedang aktif */}
             <span
               className={`hidden lg:block text-sm font-medium transition-colors duration-300 ${
-                darkMode ? "text-[#3B3735]" : "text-[#7A7571]"
+                darkMode ? "text-[#EBE8E3]" : "text-[#7A7571]"
               }`}
             >
               Dark

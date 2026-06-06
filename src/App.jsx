@@ -64,16 +64,14 @@ function App() {
         <Contact />
       </main>
 
-      {/* Footer */}
-      <div className="mt-7 bg-white py-1 flex justify-center items-center dark:bg-[#7A7571]">
-        <div className="text-center text-gray-700 dark:text-[#EBE8E3]">
+      <div className="mt-7 bg-white py-4 flex justify-center items-center dark:bg-[#3B3735] border-t border-[#EBE8E3] dark:border-[#D1CCC5]/20">
+        <div className="text-center text-[#7A7571] dark:text-[#D1CCC5]">
           &copy; 2026 Zahrin Savana. All Rights Reserved.
         </div>
       </div>
 
-      {/* Scroll to top */}
-      <div className="scroll-smooth w-10 h-10 bg-[#F3D7CA] rounded-full flex fixed bottom-5 right-5 -translate-x-1/2 cursor-pointer">
-        <a href="#home" className="text-xl m-auto">
+      <div className="scroll-smooth w-10 h-10 bg-[#F3D7CA] dark:bg-[#D1CCC5] rounded-full flex fixed bottom-5 right-5 -translate-x-1/2 cursor-pointer hover:shadow-lg transition-shadow">
+        <a href="#home" className="text-xl m-auto text-[#3B3735] dark:text-[#3B3735]">
           ↑
         </a>
       </div>
